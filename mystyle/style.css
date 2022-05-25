@@ -1,0 +1,217 @@
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+
+        body {
+            width: 100%;
+            height: 1405px;
+            background-color: aliceblue;;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mouse {
+            height: 100px;
+            width: 100px;
+        }
+
+        .side {
+            width: 819.2px;
+            height: 819.2px;
+            display: none;
+            position: fixed;
+            z-index: 7;
+            float: left;
+        }
+
+        .sideleft {
+            float: left;
+            left: 0px;
+        }
+
+        .sideright {
+            float: right;
+            right: 0px;
+        }
+
+        .banner {
+            width: 88px;
+            height: 176px;
+            position: relative;
+            text-align: left;
+            float: left;
+            margin: 20px 20px 10px 20px;
+        }
+
+        .banner a {
+            width: 88px;
+            height: 176px;
+        }
+
+        .pic image {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .pic a {
+            display: none;
+        }
+
+        .pic {
+            width: 88px;
+            height: 176px;
+            position: relative;
+            border: 1px solid red;
+        }
+
+        .btn {
+            width: 55px;
+            height: 35x;
+            position: absolute;
+            top: 155px;
+            left: 40px;
+            z-index: 5;
+        }
+
+        .btn ul li {
+            background-color: #000000;
+            color: #ffffff;
+            list-style-type: none;
+            width: 18px;
+            height: 18px;
+            float: left;
+            border-radius: 9px;
+            text-align: center;
+            line-height: 18px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .btn ul li.one {
+            background-color: #ff9966;
+        }
+
+        #top1 {
+            background-color: #515151;
+            width: 100%;
+            height: 52px;
+            z-index: 9999;
+        }
+
+        #top1 ul {
+            list-style-type: none;
+            width: 50%;
+            float: left;
+        }
+
+        #top1 div {
+            text-align: center;
+            color: white;
+            line-height: 52px;
+            float: left;
+            width: 100px;
+            height: 48px;
+            margin-left: 10px;
+        }
+
+        #top1 div:hover {
+            border-bottom: 5px solid #ffd04b;
+        }
+
+        #left {
+            width: 300px;
+            height: 1100px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+            position: absolute;
+        }
+
+        #left p {
+            margin: 12px;
+            line-height: 24px;
+        }
+
+        #left span {
+            color: red;
+        }
+
+        #main {
+            width: 1000px;
+            height: 1100px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 360px;
+            position: absolute;
+        }
+
+        #sixstars {
+            margin-top: 30px;
+        }
+
+        #fivestars {
+            margin-top: 830px;
+        }
+
+        #right {
+            float: right;
+            content: "\E78F";
+        }
+
+        .button1 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            padding: 16px 32px;
+            height: 45px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            background: url(../images/箭头.png) no-repeat center 3px;
+            background-size: 81%;
+        }
+
+        .button2 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            padding: 16px 32px;
+            height: 45px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            background: url(../images/刷新.png) no-repeat center -7.2px;
+            background-size: 85%;
+        }
+
+        button:hover {
+            background-color: #cde05d;
+        }
+
+        #bottom {
+            background-color: #515151;
+            width: 100%;
+            height: 52px;
+            margin-top: 1330px;
+            text-align: center;
+            color: white;
+        }
+
+        video{  
+        	height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;   
+            z-index:-99;
+ }
+
+ .no{
+     height: 52px;
+ }

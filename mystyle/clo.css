@@ -1,0 +1,413 @@
+
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+body{
+            background-color: rgb(155, 238, 231);
+            background-image: url(../images/bk.jpg);
+            background-size: 100%;
+}
+
+.clothes{
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.clothes img{
+    margin: 5px;
+}
+
+.text{
+    margin-left: 595px; 
+    margin-top: 195px;
+    position: absolute;
+     width: 300px; height: 100px;
+     font-size: 13px;
+     line-height: 19px;
+}
+
+.names{
+    background-color: black;
+     color: white;
+      width: 100px;
+      text-align: center;
+      margin-top: 170px;
+      margin-left: 740px;
+      position: absolute;
+}
+
+.img1{
+    background:url(../images/135px-Skin_logo_生命之地.png) no-repeat left 0px white;
+    background-position: -25px 0px;
+    background-size: 100%;
+}
+.img2{
+    background:url(../images/135px-Skin_logo_寒武纪系列.png) no-repeat left 0px white;
+    background-position: -25px 10px;
+    background-size: 100%;
+}
+.img3{
+    width: 110px;
+    height: 220px;
+    background:url(../images/135px-Skin_logo_斗争血脉.png) no-repeat left 0px white;
+    background-position: -25px 0px;
+    background-size: 100%;
+}
+
+.img4{
+    width: 110px;
+    height: 220px;
+    background:url(../images/135px-Skin_logo_冰原信使.png) no-repeat left 0px white;
+    background-position: -25px 0px;
+    background-size: 100%;
+}
+
+.img5{
+    width: 110px;
+    height: 220px;
+    background:url(../images/135px-Skin_logo_0011-飙系列.png) no-repeat left 0px white;
+    background-position: -25px 0px;
+    background-size: 100%;
+}
+
+.img1:hover{
+    transform: scale(1.2);
+}
+.img2:hover{
+    transform: scale(1.2);
+}
+.img3:hover{
+    transform: scale(1.2);
+}
+
+.img4:hover{
+    transform: scale(1.2);
+}
+
+.img5:hover{
+    transform: scale(1.2);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.mouse {/*设置鼠标判定范围*/
+    height: 100px;
+    width: 100px;
+}
+
+.banner {
+    width: 940px;
+    height: 307.8px;
+    position: relative;
+    text-align: left;
+    margin: 20px auto;
+    background-color:white;
+}
+
+.banner a {
+    width: 504px;
+    height: 307.8px;
+}
+
+.pic image {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.pic a {/*隐藏图片*/
+    display: none;
+}
+
+.pic {
+    position: absolute;
+    margin-left: 0px;
+    float: left;
+}
+
+.btn {
+    width: 70px;
+    height: 35x;
+    top:280px;
+    left:420px;
+    position: absolute; /*绝对定位于banner*/
+    z-index: 5;
+}
+
+.btn ul li {/*按钮类型*/
+    background-color: #bdcbcf;
+    color: bluefff;
+    list-style-type: none;
+    width: 18px;
+    height: 18px;
+    float: left;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn ul li.one {/*选中按钮样式*/
+    background-color: rgb(33, 33, 224);
+}
+
+#bottom {
+    background-color: #515151;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+.top {
+    background-color: #515151;
+    width: 100%;
+    height: 52px;
+    position: relative;
+    top: 0;
+}
+
+.logo{
+    text-align: center;
+    margin-top:5px;
+    margin-left: 640px;
+    width: 135px;
+    height: 157px;
+    position: absolute;
+}
+
+.top ul {
+    list-style-type: none;
+    width: 50%;
+    float: left;
+}
+
+.top div {
+    text-align: center;
+    color: white;
+    line-height: 52px;
+    float: left;
+    width: 100px;
+    height: 52px;
+    margin-left: 10px;
+}
+
+.top div:hover {
+    border-bottom: 5px solid #ffd04b;
+}
+
+.wrapper
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform 1.5s;
+	transition: transform 1.5s;
+	-webkit-perspective: 3000;
+	perspective: 3000;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.wrapper .page
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotateX(180deg) scale(0.3);
+	transform: rotateX(180deg) scale(0.3);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+	will-change: transform;
+}
+
+.wrapper.active-page1
+{
+	-webkit-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+.wrapper.active-page1 .page.page1
+{
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.wrapper.active-page2
+{
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.wrapper.active-page2 .page.page2
+{
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.wrapper.active-page3
+{
+	-webkit-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+}
+.wrapper.active-page3 .page.page3
+{
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.wrapper.active-page4
+{
+	-webkit-transform: translateY(-300%);
+	-ms-transform: translateY(-300%);
+	transform: translateY(-300%);
+}
+.wrapper.active-page4 .page.page4
+{
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.wrapper.active-page5
+{
+	-webkit-transform: translateY(-400%);
+	-ms-transform: translateY(-400%);
+	transform: translateY(-400%);
+}
+.wrapper.active-page5 .page.page5
+{
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.nav-panel
+{
+	position: fixed;
+	top: 50%;
+	right: 1em;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1000;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.57, 1.2, 0.68, 2.6);
+	transition: opacity 0.5s, transform 0.5s cubic-bezier(0.57, 1.2, 0.68, 2.6);
+	will-change: transform, opacity;
+}
+.nav-panel.invisible
+{
+	opacity: 0;
+	-webkit-transform: translateY(-50%) scale(0.5);
+	-ms-transform: translateY(-50%) scale(0.5);
+	transform: translateY(-50%) scale(0.5);
+}
+.nav-panel ul
+{
+	list-style-type: none;
+}
+.nav-panel ul .nav-btn
+{
+	position: relative;
+	overflow: hidden;
+	width: 1em;
+	height: 1em;
+	margin-bottom: 0.5em;
+	border: 0.12em solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: border-color, -webkit-transform 0.3s;
+	transition: border-color, transform 0.3s;
+	will-change: border-color, transform;
+}
+.nav-panel ul .nav-btn:after
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(0.3);
+	-ms-transform: translateX(-50%) translateY(-50%) scale(0.3);
+	transform: translateX(-50%) translateY(-50%) scale(0.3);
+	background-color: #fff;
+	opacity: 0;
+	-webkit-transition: -webkit-transform, opacity 0.3s;
+	transition: transform, opacity 0.3s;
+	will-change: transform, opacity;
+}
+.nav-panel ul .nav-btn.active:after, .nav-panel ul .nav-btn:hover:after
+{
+	-webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
+	-ms-transform: translateX(-50%) translateY(-50%) scale(0.7);
+	transform: translateX(-50%) translateY(-50%) scale(0.7);
+	opacity: 1;
+}
+.nav-panel ul .nav-btn:hover
+{
+	border-color: yellow;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.nav-panel ul .nav-btn:hover:after
+{
+	background-color: yellow;
+}
+.nav-panel .scroll-btn
+{
+	position: absolute;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	border: 0.2em solid #fff;
+	border-left: none;
+	border-bottom: none;
+	cursor: pointer;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transition: border-color 0.3s;
+	transition: border-color 0.3s;
+}
+.nav-panel .scroll-btn.up
+{
+	top: -1.6em;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.nav-panel .scroll-btn.down
+{
+	bottom: -1.2em;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+.nav-panel .scroll-btn:hover
+{
+	border-color: yellow;
+}
+
+.inner, .nav-panel ul .nav-btn:after
+{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
